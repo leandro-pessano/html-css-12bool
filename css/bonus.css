@@ -3,3 +3,80 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Nova Square', cursive;
+  font-size: 70px;
+  color: red;
+}
+
+span {
+  font-size: 60px;
+}
+
+span.blue {
+  color: blue;
+}
+
+span.green {
+  color: green;
+}
+
+.container {
+  max-width: 800px;
+  background-color: lightgrey;
+  margin: 0 auto;
+  border: 8px solid grey;
+}
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row {
+  height: 66.66px;
+  line-height: 66.66px;
+  text-align: center;
+}
+
+.row [class*="col-"] {
+  height: 100%;
+  float: left;
+}
+
+.smile {
+  background-image: url(https://lh3.googleusercontent.com/proxy/zBiNL4cJ3eUjx27VI9NQOlc0xZjNxHV9LbBHGyVnlrtd9C3_SlfFcdAbWDjAwfEK5lZswRcizuJLwp3Y1bAjkjuxbRGlq_Za);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shadow,
+.col-1{
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  box-shadow: inset -10px -10px 10px -10px black;
+}
+
+.col-1 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS132CcwkiZSApLJ6QursPcIHfK2NJXog4FHQ&usqp=CAU);
+  background-size: cover;
+}
+
+.flag {
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Minesweeper_flag.svg/1024px-Minesweeper_flag.svg.png);
+background-size: cover;
+}
+
+.noshadow {
+  background-image: none;
+  background-color: #AAAAAA;
+  box-shadow: none;
+  border: 1px solid grey;
+}
+
+.row .black .noshadow {
+  background-color: black;
+}
